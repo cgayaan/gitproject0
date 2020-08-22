@@ -9,48 +9,33 @@
               font-size: 14px;
               text-align: right;
             }
-            .searchTextBox {
+            .searchElements{
+              margin-left: auto;
+              margin-right: auto;
+            }
+            #searchTextBox {
               border-radius: 25px;
               padding: 10px;
               width: 450px;
               height: 10px;
-              margin-left: auto;
-              margin-right: auto;
             }
-            .searchButton {
-              margin-left: auto;
-              margin-right: auto;
-            }
+
 
         </style>
     </head>
     <body>
-      <div class="links">
-          <a href="imageSearch.html">Image Search</a>
-          <a href="advancedSearch.html">Advanced Search</a>
-      </div>
-
-      <div class="container">
-        <form action="https://google.com/search">
-            <input type="text" name="q" class="searchTextBox">
-            <input type="submit" value="Google Search" class="searchButton">
-        </form>
-
         <div class="grid">
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
-            <div class="grid-item">10</div>
-            <div class="grid-item">11</div>
-            <div class="grid-item">12</div>
-        <div>
-
-
+            <div class="links">
+              <a href="imageSearch.html">Image Search</a>
+              <a href="advancedSearch.html">Advanced Search</a>
+            </div>
+            <div class="searchElements">
+              <form action="https://google.com/search">
+                  <input type="text" name="q" id="searchTextBox">
+                  <p></p>
+                  <input type="submit" value="Google Search" class="searchButton">
+              </form>
+            </div>
+        </div>
     </body>
 </html>
