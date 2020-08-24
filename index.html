@@ -9,23 +9,22 @@
               font-size: 14px;
               text-align: right;
             }
-            .searchElements{
-              margin-left: auto;
-              margin-right: auto;
-              margin-top: 20%;
-              margin-bottom: 20%;
-              border-radius: 25px;
-              padding: 5px;
-              width: 450px;
-              height: 10px;
-            }
             #searchTextBox {
               border-radius: 50px;
               padding: 10px;
               width: 450px;
               height: 10px;
+              margin-left: 35%;
+              margin-right: auto;
             }
-
+            #searchButton {
+              padding: 10px;
+              width: 200px;
+              height: 30px;
+              text-align: center;
+              margin-left: 43%;
+              margin-right: auto;
+            }
 
         </style>
     </head>
@@ -36,12 +35,15 @@
               <a href="advancedSearch.html">Advanced Search</a>
             </div>
             <div class="searchElements">
+              <p>
               <form action="https://google.com/search">
                   <input type="text" name="q" id="searchTextBox">
                   <p></p>
-                  <input type="submit" value="Google Search" class="searchButton">
+                  <input type="submit" value="Google Search" id="searchButton">
               </form>
+              </p>
             </div>
+
         </div>
     </body>
 </html>
