@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Image Search</title>
         <style>
             .links{
               color: blue;
               font-size: 14px;
               text-align: right;
             }
+            .searchElements > div{
+              margin:0 auto;
+              width:20%;
+              margin-top:15%;
+            }
+            #searchTextBox {
+              border-radius: 50px;
+              padding: 10px;
+              width: 400px;
+              height: 10px;
+              margin:0 auto;
+            }
+            #searchButton {
+              padding: 10px;
+              width: 200px;
+              height: 30px;
+              text-align: center;
+              margin-left: 30%;
+            }
         </style>
     </head>
     <body>
-      <div class="links">
-        <a href="index.html">Google Search</a>
+      <div class="grid">
+        <div class="links">
+          <a href="index.html">Google Search</a>
+        </div>
+        <div class="searchElements">
+          <div>
+            <form action="https://www.google.com/search" method="get">
+              <input type="text" name="q" id="searchTextBox">
+              <input type="hidden" name="tbm" value="isch">
+              <!-- the minimal image search url is https://www.google.com/search?tbm=isch&q=test -->
+              <!-- is it not possible to pass this in the form action -->
+              <!--so we need to use hidden input and name and value attributes-->
+              <input type="submit" value="Google Image Search" id="searchButton">
+            </form>
+          </div>
+        </div>
       </div>
     </body>
 </html>
