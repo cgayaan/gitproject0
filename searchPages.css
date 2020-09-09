@@ -35,6 +35,7 @@
   text-align: left;
   font-size: 14px;
   font-family: Verdana,sans-serif;
+  outline: none;
 }
 #advancedSearchTextBox {
   /*border-radius: 50px;*/
@@ -46,6 +47,7 @@
   text-align: left;
   font-size: 14px;
   font-family: Verdana,sans-serif;
+  outline: none;
 }
 #searchButton {
   padding: 10px;
@@ -99,6 +101,11 @@ table{
   border-spacing: 5px;
 }
 #indexTable{
+  width: 100%;
+  height: 35px;
+  border-spacing: 5px;
+}
+#imageTable{
   width: 100%;
   height: 35px;
   border-spacing: 5px;
